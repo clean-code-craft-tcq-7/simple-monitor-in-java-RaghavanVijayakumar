@@ -1,5 +1,5 @@
 package vitals;
-public class EBMS{
+public class BMSControl{
   
   public boolean isBatteryParameterWithinLimits(float parameter,float minLimit, float maxLimit)
   {
