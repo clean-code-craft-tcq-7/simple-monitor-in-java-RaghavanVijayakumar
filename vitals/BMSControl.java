@@ -3,11 +3,7 @@ public class BMSControl{
   
   public boolean isBatteryParameterWithinLimits(float parameter,float minLimit, float maxLimit)
   {
-    boolean result = true;
-    if(parameter >= minLimit && parameter <= maxLimit) {
-            result=false;
-        }
-    return result;
+    return parameter >= minLimit && parameter <= maxLimit;
   }
   
   public boolean isTemperatureinValidRange(float temperature)
@@ -22,7 +18,7 @@ public class BMSControl{
          
   public boolean isChargeRateinValidRange(float chargeRate)
    {
-      return (chargeRate >= BMSConstants.MaxChargeRate);
+      return (chargeRate <= BMSConstants.MaxChargeRate);
    }
             
    public boolean batteryIsOk(float temperature, float soc, float chargeRate) {
