@@ -28,4 +28,4 @@ public class BMSControl{
    public boolean batteryIsOk(float temperature, float soc, float chargeRate) {
      return (isTemperatureinValidRange(temperature) && isSOCinValidRange(soc) && isChargeRateinValidRange(chargeRate));
    }
-            
+}            
